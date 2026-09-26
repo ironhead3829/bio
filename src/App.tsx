@@ -1,18 +1,34 @@
-import './App.css'
+import { Route, Routes } from "react-router-dom";
+
+import Navbar from "./components/Navbar";
+// import Hero from "./components/Hero";
+// import Footer from "./components/Footer";
+
+// import Home from "./pages/Home";
+// import About from "./pages/About";
+// import Experience from "./pages/Experience";
+// import Projects from "./pages/Projects";
+// import Contact from "./pages/Contact";
 
 function App() {
 
   return (
     <>
-      <div className="min-h-screen bg-slate-50 flex items-center justify-center p-6">
-        <section className="bg-white rounded-2xl shadow-xl p-8 max-w-md w-full border border-slate-100 text-center">
-          <h1 className="text-4xl font-extrabold text-slate-800 tracking-tight mb-2">
-            Jason Tunstill
-          </h1>
-          <p className="text-indigo-600 font-semibold uppercase tracking-wider text-sm">
-            Biography Application
-          </p>
-        </section>
+      <div className="min-h-screen w-full bg-slate-950 text-slate-100">
+        <Navbar />
+        {/* <Hero /> */}
+
+        <main className="flex-1">
+          {/* <Routes> */}
+            {/* <Route path="/" element={<Home />} /> */}
+            {/* <Route path="/about" element={<About />} /> */}
+            {/* <Route path="/experience" element={<Experience />} /> */}
+            {/* <Route path="/projects" element={<Projects />} /> */}
+            {/* <Route path="/contact" element={<Contact />} /> */}
+          {/* </Routes> */}
+        </main>
+
+        {/* <Footer /> */}
       </div>
     </>
   )

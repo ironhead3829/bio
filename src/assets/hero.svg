@@ -1,0 +1,301 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="640" viewBox="0 0 1920 640">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#061827"/>
+    <stop offset=".55" stop-color="#0a2439"/>
+    <stop offset="1" stop-color="#123653"/>
+  </linearGradient>
+  <linearGradient id="desk" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#a55c32"/>
+    <stop offset="1" stop-color="#4f2b22"/>
+  </linearGradient>
+  <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#061827"/>
+    <stop offset="1" stop-color="#0c304b"/>
+  </linearGradient>
+  <radialGradient id="glow">
+    <stop offset="0" stop-color="#efa04c" stop-opacity=".32"/>
+    <stop offset="1" stop-color="#efa04c" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="shadow">
+    <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000" flood-opacity=".35"/>
+  </filter>
+</defs>
+
+<!-- Background -->
+<rect width="1920" height="640" fill="url(#bg)"/>
+<circle cx="1510" cy="280" r="350" fill="url(#glow)"/>
+<path d="M920 640 C1100 500 1280 510 1490 410 C1700 310 1810 160 1920 125 V640Z"
+      fill="#1a4567" opacity=".18"/>
+
+<!-- Left typography -->
+<g font-family="Arial, Helvetica, sans-serif">
+  <text x="88" y="82" fill="#91b9d8" font-size="22" letter-spacing="7">SOFTWARE ENGINEER</text>
+  <line x1="490" y1="75" x2="625" y2="75" stroke="#47b3e8" stroke-width="2"/>
+
+  <text x="88" y="168" fill="#f7f8fa" font-size="61" font-weight="700">Practical Solutions</text>
+  <text x="88" y="235" fill="#f7f8fa" font-size="61" font-weight="700">for Complex Systems</text>
+
+  <text x="90" y="296" fill="#cbd6df" font-size="24">
+    I build, maintain, and modernize software that works in the real world—
+  </text>
+  <text x="90" y="333" fill="#cbd6df" font-size="24">
+    from backend services and APIs to desktop and web applications.
+  </text>
+</g>
+
+<!-- Technology marks -->
+<g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+  <!-- C++ -->
+  <g transform="translate(105 395)">
+    <polygon points="0,-27 26,-14 26,14 0,27 -26,14 -26,-14" fill="#3e80bb"/>
+    <text x="-4" y="8" fill="#fff" font-size="23" font-weight="700">C</text>
+    <text x="13" y="3" fill="#fff" font-size="11" font-weight="700">++</text>
+    <text y="50" fill="#d8e2ea" font-size="15">C++</text>
+  </g>
+
+  <!-- Python -->
+  <g transform="translate(200 395)">
+    <rect x="-20" y="-20" width="33" height="26" rx="8" fill="#3776ab"/>
+    <rect x="-13" y="-7" width="33" height="26" rx="8" fill="#ffd343"/>
+    <circle cx="4" cy="-13" r="2" fill="#fff"/>
+    <circle cx="-4" cy="12" r="2" fill="#fff"/>
+    <text y="50" fill="#d8e2ea" font-size="15">Python</text>
+  </g>
+
+  <!-- Qt -->
+  <g transform="translate(295 395)">
+    <rect x="-24" y="-24" width="48" height="48" rx="5" fill="#41cd52"/>
+    <text x="-4" y="9" fill="#fff" font-size="28" font-weight="700">Q</text>
+    <text x="13" y="9" fill="#fff" font-size="19" font-weight="700">t</text>
+    <text y="50" fill="#d8e2ea" font-size="15">Qt</text>
+  </g>
+
+  <!-- Rails -->
+  <g transform="translate(390 395)">
+    <path d="M-25 17 C-16-17 8-29 29-6 C10-11-7-5-16 19Z" fill="#d94357"/>
+    <path d="M-14 5 C-2-5 9-8 22-3" fill="none" stroke="#081b2b" stroke-width="3" stroke-dasharray="4 5"/>
+    <text y="50" fill="#d8e2ea" font-size="15">Rails</text>
+  </g>
+
+  <!-- PostgreSQL -->
+  <g transform="translate(495 395)">
+    <ellipse cx="0" cy="-3" rx="19" ry="23" fill="none" stroke="#72b4dc" stroke-width="4"/>
+    <path d="M9 12 C20 19 17 29 7 24 L3 7" fill="none" stroke="#72b4dc" stroke-width="4" stroke-linecap="round"/>
+    <text y="50" fill="#d8e2ea" font-size="14">PostgreSQL</text>
+  </g>
+
+  <!-- Docker -->
+  <g transform="translate(610 395)">
+    <g fill="#35a9e0">
+      <rect x="-25" y="-10" width="10" height="9"/><rect x="-13" y="-10" width="10" height="9"/>
+      <rect x="-1" y="-10" width="10" height="9"/><rect x="-13" y="-21" width="10" height="9"/>
+      <rect x="-1" y="-21" width="10" height="9"/><rect x="-1" y="-32" width="10" height="9"/>
+    </g>
+    <path d="M-30 2 H17 C22-7 30-7 36-3 C31 2 27 4 20 5 C13 22-11 27-25 15Z" fill="#35a9e0"/>
+    <text y="50" fill="#d8e2ea" font-size="15">Docker</text>
+  </g>
+
+  <!-- Windows -->
+  <g transform="translate(715 395)">
+    <path d="M-25-22 L-3-25 V-3 H-25Z M1-26 L26-30 V-3 H1Z M-25 1 H-3 V23 L-25 20Z M1 1 H26 V27 L1 23Z"
+          fill="#49a9e8"/>
+    <text y="50" fill="#d8e2ea" font-size="15">Windows</text>
+  </g>
+
+  <!-- Linux -->
+  <g transform="translate(825 395)">
+    <ellipse cx="0" cy="0" rx="17" ry="25" fill="#e8e9ea"/>
+    <ellipse cx="0" cy="-12" rx="14" ry="15" fill="#1b2025"/>
+    <circle cx="-5" cy="-14" r="2" fill="#fff"/><circle cx="5" cy="-14" r="2" fill="#fff"/>
+    <polygon points="0,-9 -5,-4 5,-4" fill="#e5a42e"/>
+    <path d="M-16 16 L-25 25 M16 16 L25 25" stroke="#e5a42e" stroke-width="6" stroke-linecap="round"/>
+    <text y="50" fill="#d8e2ea" font-size="15">Linux</text>
+  </g>
+
+  <!-- CI/CD pipeline -->
+  <g transform="translate(930 395)">
+    <circle cx="-23" cy="-11" r="8" fill="none" stroke="#48b5e8" stroke-width="3"/>
+    <circle cx="0" cy="12" r="8" fill="none" stroke="#48b5e8" stroke-width="3"/>
+    <circle cx="23" cy="-11" r="8" fill="none" stroke="#48b5e8" stroke-width="3"/>
+    <path d="M-16-6 L-6 6 M7 6 L17-6" fill="none" stroke="#48b5e8" stroke-width="3"/>
+    <path d="M-26-22 H26" stroke="#48b5e8" stroke-width="3" stroke-linecap="round"/>
+    <path d="M19-27 L27-22 L19-17" fill="none" stroke="#48b5e8" stroke-width="3" stroke-linejoin="round"/>
+    <text y="50" fill="#d8e2ea" font-size="15">CI/CD</text>
+  </g>
+</g>
+
+<!-- Footer -->
+<g font-family="Arial, Helvetica, sans-serif" fill="#91b9d8" font-size="16" letter-spacing="4">
+  <text x="90" y="522">BUILD</text>
+  <text x="181" y="522">|</text>
+  <text x="216" y="522">DEBUG</text>
+  <text x="319" y="522">|</text>
+  <text x="354" y="522">INTEGRATE</text>
+  <text x="493" y="522">|</text>
+  <text x="528" y="522">MODERNIZE</text>
+  <text x="690" y="522">|</text>
+  <text x="725" y="522">DELIVER</text>
+</g>
+
+<!-- Vector workstation -->
+<g transform="translate(1010 25)">
+
+  <!-- Window -->
+  <rect x="180" y="0" width="720" height="310" rx="8" fill="#091e30" stroke="#26516f" stroke-width="3"/>
+  <rect x="194" y="14" width="692" height="282" fill="#12486f"/>
+  <path d="M194 235 L300 170 L400 225 L510 115 L625 205 L735 135 L886 220 V296 H194Z"
+        fill="#0b3455"/>
+  <line x1="425" y1="14" x2="425" y2="296" stroke="#0b2235" stroke-width="10"/>
+  <line x1="655" y1="14" x2="655" y2="296" stroke="#0b2235" stroke-width="10"/>
+
+  <!-- Shelf -->
+  <rect x="65" y="76" width="215" height="14" rx="4" fill="#77442b"/>
+  <rect x="107" y="36" width="52" height="40" rx="4" fill="#aa7450"/>
+  <g fill="#2d6740">
+    <ellipse cx="124" cy="27" rx="16" ry="8" transform="rotate(-30 124 27)"/>
+    <ellipse cx="145" cy="23" rx="17" ry="8" transform="rotate(28 145 23)"/>
+    <ellipse cx="132" cy="11" rx="15" ry="7"/>
+  </g>
+
+  <!-- Lamp -->
+  <rect x="208" y="151" width="11" height="92" fill="#76533b"/>
+  <path d="M181 153 H247 L235 113 H193Z" fill="#eda54f"/>
+  <ellipse cx="214" cy="244" rx="35" ry="8" fill="#55392d"/>
+
+  <!-- Desk -->
+  <path d="M0 425 L910 405 L910 555 L80 585Z" fill="url(#desk)" filter="url(#shadow)"/>
+  <path d="M0 425 L910 405 L910 431 L25 452Z" fill="#b96939"/>
+
+  <!-- Main monitor -->
+  <g transform="translate(305 135)" filter="url(#shadow)">
+    <rect width="400" height="265" rx="13" fill="#101820"/>
+    <rect x="13" y="14" width="374" height="226" rx="5" fill="url(#screen)"/>
+    <!-- Linux-style editor title bar -->
+    <rect x="13" y="14" width="374" height="27" rx="5" fill="#182632"/>
+    <circle cx="29" cy="27" r="7" fill="#f2c94c"/>
+    <path d="M25 27h8 M29 23v8" stroke="#182632" stroke-width="1.6" stroke-linecap="round"/>
+    <text x="44" y="31" fill="#cbd6df" font-family="Arial, Helvetica, sans-serif" font-size="10">main.py — Visual Studio Code — Linux</text>
+    <g stroke="#9fb1bf" stroke-width="1.3" fill="none">
+      <path d="M335 28h9"/>
+      <rect x="351" y="23" width="9" height="9"/>
+      <path d="M369 23l9 9 M378 23l-9 9"/>
+    </g>
+
+    <!-- Real Python code -->
+    <g font-family="Consolas, 'Courier New', monospace" font-size="11" text-anchor="start">
+      <text x="34" y="68" fill="#7dcfff">def</text>
+      <text x="57" y="68" fill="#d8dee9">process_records(records):</text>
+
+      <text x="46" y="87" fill="#d8dee9">results = []</text>
+
+      <text x="46" y="106" fill="#bb9af7">for</text>
+      <text x="69" y="106" fill="#d8dee9">record</text>
+      <text x="112" y="106" fill="#bb9af7">in</text>
+      <text x="129" y="106" fill="#d8dee9">records:</text>
+
+      <text x="58" y="125" fill="#d8dee9">data = normalize(record)</text>
+
+      <text x="58" y="144" fill="#bb9af7">if</text>
+      <text x="74" y="144" fill="#d8dee9">not data:</text>
+
+      <text x="70" y="163" fill="#bb9af7">continue</text>
+
+      <text x="58" y="182" fill="#d8dee9">results.append(transform(data))</text>
+
+      <text x="46" y="201" fill="#bb9af7">return</text>
+      <text x="89" y="201" fill="#d8dee9">results</text>
+
+      <text x="220" y="68" fill="#7dcfff">def</text>
+      <text x="243" y="68" fill="#d8dee9">main():</text>
+
+      <text x="232" y="87" fill="#d8dee9">records = load_records()</text>
+      <text x="232" y="106" fill="#d8dee9">processed = process_records(records)</text>
+      <text x="232" y="125" fill="#d8dee9">save_results(processed)</text>
+
+      <text x="220" y="163" fill="#bb9af7">if</text>
+      <text x="236" y="163" fill="#d8dee9">__name__ ==</text>
+      <text x="310" y="163" fill="#9ece6a">"__main__"</text>
+      <text x="371" y="163" fill="#d8dee9">:</text>
+      <text x="232" y="182" fill="#d8dee9">main()</text>
+    </g>
+
+    <rect x="186" y="265" width="28" height="57" fill="#111a22"/>
+    <rect x="137" y="316" width="126" height="12" rx="5" fill="#111a22"/>
+  </g>
+
+  <!-- Side monitor -->
+  <g transform="translate(720 165)" filter="url(#shadow)">
+    <rect width="190" height="238" rx="12" fill="#101820"/>
+    <rect x="12" y="13" width="166" height="203" rx="5" fill="url(#screen)"/>
+    <!-- Linux desktop/editor panel -->
+    <rect x="12" y="13" width="166" height="22" rx="5" fill="#182632"/>
+    <circle cx="25" cy="24" r="6" fill="#f2c94c"/>
+    <path d="M22 24h6 M25 21v6" stroke="#182632" stroke-width="1.3" stroke-linecap="round"/>
+    <text x="36" y="27" fill="#cbd6df" font-family="Arial, Helvetica, sans-serif" font-size="8">client.cpp — Linux</text>
+    <g stroke="#9fb1bf" stroke-width="1" fill="none">
+      <path d="M143 25h7"/>
+      <rect x="155" y="21" width="7" height="7"/>
+      <path d="M167 21l7 7 M174 21l-7 7"/>
+    </g>
+    <!-- Real C++ code -->
+    <g transform="translate(0 8)" font-family="Consolas, 'Courier New', monospace" font-size="8.5" text-anchor="start">
+      <text x="25" y="49" fill="#bb9af7">class</text>
+      <text x="51" y="49" fill="#d8dee9">Client {</text>
+      <text x="31" y="65" fill="#bb9af7">public:</text>
+      <text x="38" y="81" fill="#7dcfff">bool</text>
+      <text x="62" y="81" fill="#d8dee9">connect();</text>
+      <text x="38" y="97" fill="#7dcfff">void</text>
+      <text x="62" y="97" fill="#d8dee9">disconnect();</text>
+      <text x="38" y="113" fill="#7dcfff">Result</text>
+      <text x="75" y="113" fill="#d8dee9">send(Request r);</text>
+      <text x="25" y="129" fill="#d8dee9">};</text>
+
+      <text x="25" y="154" fill="#7dcfff">auto</text>
+      <text x="50" y="154" fill="#d8dee9">result = client.send(req);</text>
+      <text x="25" y="170" fill="#bb9af7">if</text>
+      <text x="38" y="170" fill="#d8dee9">(!result.ok()) {</text>
+      <text x="37" y="186" fill="#d8dee9">log_error(result);</text>
+      <text x="25" y="202" fill="#d8dee9">}</text>
+    </g>
+  </g>
+
+  <!-- Keyboard -->
+  <g transform="translate(365 450) skewX(-12)" filter="url(#shadow)">
+    <rect width="355" height="78" rx="9" fill="#101820"/>
+    <g fill="#31536b">
+      <path d="M15 12h285v10H15z"/>
+      <path d="M20 31h300v10H20z"/>
+      <path d="M35 50h270v10H35z"/>
+    </g>
+    <g stroke="#101820" stroke-width="4">
+      <path d="M45 10v52 M75 10v52 M105 10v52 M135 10v52 M165 10v52 M195 10v52 M225 10v52 M255 10v52 M285 10v52"/>
+    </g>
+  </g>
+
+  <!-- Mug -->
+  <g transform="translate(235 397)">
+    <path d="M0 0 H55 V58 Q27 70 0 58Z" fill="#102536"/>
+    <path d="M55 12 C86 5 87 51 55 47" fill="none" stroke="#102536" stroke-width="10"/>
+    <ellipse cx="27" cy="2" rx="27" ry="7" fill="#1c3c52"/>
+  </g>
+
+  <!-- Mouse -->
+  <g transform="translate(785 478)">
+    <ellipse cx="42" cy="25" rx="42" ry="27" fill="#101820"/>
+    <path d="M42 1v19" stroke="#31536b" stroke-width="3"/>
+  </g>
+
+  <!-- Plant -->
+  <g transform="translate(110 305)">
+    <rect x="35" y="80" width="74" height="74" rx="12" fill="#98705c"/>
+    <g fill="#377b49">
+      <ellipse cx="65" cy="64" rx="17" ry="47" transform="rotate(-35 65 64)"/>
+      <ellipse cx="93" cy="57" rx="17" ry="47" transform="rotate(35 93 57)"/>
+      <ellipse cx="48" cy="49" rx="15" ry="41" transform="rotate(-62 48 49)"/>
+      <ellipse cx="112" cy="44" rx="15" ry="41" transform="rotate(62 112 44)"/>
+      <ellipse cx="80" cy="31" rx="16" ry="44"/>
+    </g>
+  </g>
+</g>
+</svg>
