@@ -2,7 +2,8 @@ name: Deploy to Github Pages
 
 on:
   push:
-   branches: 'main'
+   branches:
+    - main
 
 permissions:
   contents: read
@@ -21,10 +22,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.2.2
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v4.2.0
         with:
           node-version: 24.4.0
           cache: 'npm'
@@ -35,11 +36,14 @@ jobs:
       - name: Check Code (Oxlint)
         run: npx oxlint
 
+      - name: Build Project
+        run: npm run build
+
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v5.0.0
 
       - name: Upload Build Artifacts
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v3.1.1
         with:
           path: './dist'
 
