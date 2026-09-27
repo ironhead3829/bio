@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
-// import Hero from "./components/Hero";
+import Hero from "./components/Hero";
 // import Footer from "./components/Footer";
 
 // import Home from "./pages/Home";
@@ -16,7 +16,7 @@ function App() {
     <>
       <div className="min-h-screen w-full bg-slate-950 text-slate-100">
         <Navbar />
-        {/* <Hero /> */}
+        <Hero />
 
         <main className="flex-1">
           {/* <Routes> */}
