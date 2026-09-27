@@ -4,21 +4,22 @@ export default function About() {
     return(
         <>
             <section className="mx-auto w full max-w-7xl px-6 py-6">
-                <h1 className="text-3xl font-semibold text-white">
-                    About Me
-                </h1>
+                <div className="grid gap-8 md:grid-cols-[1fr_auto] md:items-end">
+                    <h1 className="text-3xl font-semibold text-white">
+                        About Me
+                    </h1>
 
-                <img
-                    src={profilePhoto}
-                    alt="Jason Tunstill"
-                    className="mx-auto mt-8 w-64 rounded-xl object-cover shadow-lg md:w-72"
-                />
-
+                    <img
+                        src={profilePhoto}
+                        alt="Jason Tunstill"
+                        className="mx-auto w-64 rounded-xl object-cover shadow-lg md:mx-0 md:w-72"
+                    />
+                </div>
                 <p className="mt-4 text-slate-400">
-                    I've been programming, on and off, for about 40 years. I started around age 10 with TI-BASIC
-                    and later learned Apple BASIC as a teenager. The first program I design on my own was a simple
-                    Battleship-style game where the player and computer took turns guessing coordinates to find each
-                    other's ship. The second time I ran it, the computer sank my ship on its first guess. Despite that
+                    I've been programming, on and off, for about 40 years, but my professional career starter over 11 years ago.
+                    I started around age 10 with TI-BASIC and later learned Apple BASIC as a teenager. The first program I designed
+                    on my own was a simple Battleship-style game where the player and computer took turns guessing coordinates to
+                    find each other's ship. The second time I ran it, the computer sank my ship on its first guess. Despite that
                     early defeat, I was hooked. At the time, I dreamed of eventually developing computer games.
                 </p>
 
@@ -32,9 +33,9 @@ export default function About() {
             </section>
 
             <section className="mx-auto w full max-w-7xl px-6 py-6">
-                <h1 className="text-3xl font-semibold text-white">
+                <h2 className="text-3xl font-semibold text-white">
                     How I Approach Software Development
-                </h1>
+                </h2>
 
                 <p className="mt-4 text-slate-400">
                     What I enjoy most about software engineering is solving problems. Sometimes that means designing and building
@@ -45,8 +46,10 @@ export default function About() {
                 <p className="mt-4 text-slate-400">
                     When debugging, my first priority is usually to reproduce the problem consistently. From there, I work through
                     the system using whatever tools make sense—debuggers and breakpoints, logging or print statements, documentation,
-                    source-code analysis, and increasingly AI-assisted code review. The tools may change, but the objective is the
-                    same: understand what's actually happening rather than guessing at the cause.
+                    source-code analysis, and increasingly AI-assisted development tools. I use AI as another tool for reviewing code,
+                    exploring possible causes, evaluating potential solutions, and helping me work through unfamiliar technologies. The
+                    tools may change, but the objective is the same: understand what's actually happening rather than guessing at the
+                    cause.
                 </p>
 
                 <p className="mt-4 text-slate-400">
@@ -57,13 +60,13 @@ export default function About() {
             </section>
 
             <section className="mx-auto w full max-w-7xl px-6 py-6">
-                <h1 className="text-3xl font-semibold text-white">
+                <h2 className="text-3xl font-semibold text-white">
                     A Generalist by Choice
-                </h1>
+                </h2>
 
                 <p className="mt-4 text-slate-400">
-                    I've worked with C++, Python, Qt, Ruby on Rails, C#/.NET, LabVIEW, SQL, JavaScript, React, CI/CD systems, and a
-                    variety of other technologies. I don't consider being tied to any one of them the goal.
+                    I've worked with C++, Python, Qt, QML, PySide6, Ruby on Rails, C#/.NET, LabVIEW, SQL, JavaScript, Typescript, React,
+                    CI/CD systems, and a variety of other technologies. I don't consider being tied to any one of them the goal.
                 </p>
 
                 <p className="mt-4 text-slate-400">
@@ -82,9 +85,9 @@ export default function About() {
             </section>
 
             <section className="mx-auto w full max-w-7xl px-6 py-6">
-                <h1 className="text-3xl font-semibold text-white">
+                <h2 className="text-3xl font-semibold text-white">
                     Always Learning
-                </h1>
+                </h2>
 
                 <p className="mt-4 text-slate-400">
                     I'm continuing to broaden my skills rather than narrowing them to a single technology stack. I'm currently
@@ -92,29 +95,30 @@ export default function About() {
                     building dynamic, component-based frontends. This website is part of that effort.
                 </p>
                 <p className="mt-4 text-slate-400">
-                    I'm also exploring scientific Python tools such as NumPy, SciPy, and pandas, and I've begun looking at Rust.
-                    More recently, I've been experimenting with running large language models locally using Ollama and Qwen to better
-                    understand how applications can interact with local AI models. These are areas I'm still learning rather than
-                    technologies I claim professional expertise in, but learning unfamiliar technologies has been a recurring part
-                    of my career.
+                    I'm also exploring scientific Python tools such as NumPy, SciPy, and pandas, and I've begun looking at Rust. I'm particularly
+                    interested in how AI can be incorporated into both software-development workflows and applications. I've been experimenting
+                    with running large language models locally using Ollama and Qwen to better understand how applications can interact with local
+                    models. I'm also gaining practical experience using AI-assisted development tools for coding, debugging, research, and learning
+                    new technologies. These are areas I'm continuing to explore rather than technologies I claim professional expertise in, but
+                    learning unfamiliar technologies has been a recurring part of my career.
                 </p>
             </section>
 
             <section className="mx-auto w full max-w-7xl px-6 py-6">
-                <h1 className="text-3xl font-semibold text-white">
+                <h2 className="text-3xl font-semibold text-white">
                     Outside of Software
-                </h1>
+                </h2>
 
                 <p className="mt-4 text-slate-400">
                     Away from the computer, I enjoy projects where I can work with my hands. That might mean working on my truck or
                     tackling home-improvement projects such as installing flooring, replacing a bathroom vanity, or doing basic electrical
                     work like replacing light fixtures, ceiling fans, outlets, and switches. I enjoy playing PC games like World of
-                    Warcraft and The Witcher III. I also enjoy reading SciFi/Fanatasy novels. 
+                    Warcraft and The Witcher III. I also enjoy reading science fiction and fantasy novels. 
                 </p>
 
                 <p className="mt-4 text-slate-400">
-                    I greatly enjoy spending time with my family. I love spending time with my wife, 3 kids, and most importantly my 
-                    granddaughter.
+                    Most of all, I enjoy spending time with my family - my wife, three children, granddaughter, dad, and sister.
+                    I also keep the memory of my mother, who passed away in 2025, close to me. Family is an important part of who I am.
                 </p>
             </section>
 
