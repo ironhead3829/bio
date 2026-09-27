@@ -1,7 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
@@ -16,7 +15,6 @@ function App() {
     <>
       <div className="flex min-h-screen w-full flex-col bg-slate-950 text-slate-100">
         <Navbar />
-        <Hero />
 
         <main className="flex-1">
           <Routes>
