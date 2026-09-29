@@ -26,7 +26,9 @@ export default function Footer() {
                             aria-label="Github"
                             className={linkClass}
                         >
-                            <FaGithub />
+                            <div className="text-purple-400 transition group-hover:text-purple-300">
+                                <FaGithub />
+                            </div>
                             <span role="tooltip" className={tooltipClass}>GitHub</span>
                         </a>
                         <a
@@ -35,7 +37,9 @@ export default function Footer() {
                             rel="noopener noreferrer"
                             className={linkClass}
                         >
-                            <FaLinkedin />
+                            <div className="text-blue-500 transition group-hover:text-blue-400">
+                                <FaLinkedin />
+                            </div>
                             <span role="tooltip" className={tooltipClass}>LinkedIn</span>                        
                         </a>
                         <a
@@ -43,7 +47,9 @@ export default function Footer() {
                             download
                             className={linkClass}
                         >
-                            <HiOutlineDocumentArrowDown />
+                            <div className="text-red-400 transition group-hover:text-red-300">
+                                <HiOutlineDocumentArrowDown />
+                            </div>
                             <span role="tooltip" className={tooltipClass}>Download Resume</span>                        
                         </a>
 
