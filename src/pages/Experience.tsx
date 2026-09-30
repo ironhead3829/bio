@@ -19,12 +19,11 @@ export default function Experience() {
           Experience
         </h1>
 
-        <p className="mt-4 max-w-4xl leading-7 text-slate-400">
-          My professional experience spans software development, engineering
-          systems, hardware/software integration, build and release automation,
-          and technical problem solving. Much of my work has involved
-          maintaining and extending production systems while also designing and
-          building new applications, services, utilities, and internal tools.
+        <p className="mt-4 leading-7 text-slate-400">
+          My professional experience spans software development, engineering systems,
+          hardware/software integration, build and release automation, and technical problem
+          solving. Much of my work has involved maintaining and extending production systems while
+          also designing and building new applications, services, utilities, and internal tools.
         </p>
       </header>
 
@@ -46,13 +45,13 @@ export default function Experience() {
               </div>
 
               <p className="text-sm text-slate-400">
-                March 2026 – Present · Tullahoma, Tennessee
+                March 2026 - Present · Tullahoma, Tennessee
               </p>
             </div>
           </div>
 
           <div className="mt-6 space-y-10">
-            <p className="max-w-5xl leading-7 text-slate-400">
+            <p className="leading-7 text-slate-400">
               I develop and maintain software used in engineering test and data
               systems, working primarily with LabVIEW and C#. My work includes
               implementing features, diagnosing defects, executing test plans,
@@ -68,7 +67,7 @@ export default function Experience() {
                 LabVIEW & DevExpress Grid Integration
               </h3>
 
-              <p className="mt-3 max-w-5xl leading-7 text-slate-400">
+              <p className="mt-3 leading-7 text-slate-400">
                 A significant portion of my recent work has involved improving
                 the integration between LabVIEW applications and DevExpress
                 XtraGrid controls implemented through .NET.
@@ -114,7 +113,7 @@ export default function Experience() {
                 Application Development & Maintenance
               </h3>
 
-              <p className="mt-3 max-w-5xl leading-7 text-slate-400">
+              <p className="mt-3 leading-7 text-slate-400">
                 I work within an established suite of engineering applications,
                 implementing new behavior while preserving existing workflows.
               </p>
@@ -160,6 +159,37 @@ export default function Experience() {
               </BulletList>
             </div>
 
+            <div>
+              <h3 className="text-xl font-semibold text-white">
+                AI-Assisted Development
+              </h3>
+
+              <p className="mt-3 leading-7 text-slate-400">
+                I use company-approved AI development tools, including GitHub Copilot
+                and OpenCode, as part of my C# and LabVIEW development workflow.
+                LabVIEW&apos;s binary source format limits direct code analysis, so I
+                also use screenshots of block diagrams when working with AI-assisted
+                tools.
+              </p>
+
+              <BulletList>
+                <li>
+                  Use AI assistance with C# development for code investigation,
+                  implementation ideas, debugging, and review.
+                </li>
+                <li>
+                  Use LabVIEW block-diagram screenshots to help understand unfamiliar
+                  logic, investigate defects, identify potential design or concurrency
+                  issues, and explore restructuring options.
+                </li>
+                <li>
+                  Compare completed block diagrams against previously discussed logic
+                  to help review whether an implementation matches the intended
+                  behavior.
+                </li>
+              </BulletList>
+            </div>
+
             <div className="flex flex-wrap gap-2">
               <Badge>LabVIEW</Badge>
               <Badge>C#</Badge>
@@ -180,7 +210,10 @@ export default function Experience() {
             <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
               <div>
                 <h2 className="text-2xl font-semibold text-white">
-                  APEX Turbine
+                  APEX Turbine Testing Technologies
+                    <span className="text-lg font-normal text-white inline-block ml-2">
+                      (formerly Experimental Design and Analysis Solutions, Inc)
+                    </span>
                 </h2>
 
                 <p className="mt-1 text-slate-300">
@@ -189,13 +222,13 @@ export default function Experience() {
               </div>
 
               <p className="text-sm text-slate-400">
-                January 2015 – January 2026
+                January 2015 - January 2026
               </p>
             </div>
           </div>
 
           <div className="mt-6 space-y-14">
-            <p className="max-w-5xl leading-7 text-slate-400">
+            <p className="leading-7 text-slate-400">
               During eleven years at APEX Turbine, I worked across much of the
               company&apos;s software product line rather than specializing in
               a single subsystem. My responsibilities included C++ desktop
@@ -211,7 +244,7 @@ export default function Experience() {
                 Circumferential Optimizer & Scope Limit Utility
               </h3>
 
-              <p className="mt-3 max-w-5xl leading-7 text-slate-400">
+              <p className="mt-3 leading-7 text-slate-400">
                 Two of my first projects at APEX involved extracting existing
                 engineering functionality from larger applications and turning
                 it into focused standalone C++/Qt applications.
@@ -223,7 +256,7 @@ export default function Experience() {
                     Circumferential Optimizer
                   </h4>
 
-                  <p className="mt-2 max-w-5xl leading-7 text-slate-400">
+                  <p className="mt-2 leading-7 text-slate-400">
                     I began Circumferential Optimizer during my first week at
                     APEX and completed the initial standalone application in
                     approximately one month. The underlying probe-placement
@@ -256,7 +289,7 @@ export default function Experience() {
                     Scope Limit Utility
                   </h4>
 
-                  <p className="mt-2 max-w-5xl leading-7 text-slate-400">
+                  <p className="mt-2 leading-7 text-slate-400">
                     Immediately after Circumferential Optimizer, I created Scope
                     Limit Utility around limit-file functionality extracted from
                     an existing Workflow application.
@@ -286,7 +319,7 @@ export default function Experience() {
                 DS / DR / DV Product Family
               </h3>
 
-              <p className="mt-3 max-w-5xl leading-7 text-slate-400">
+              <p className="mt-3 leading-7 text-slate-400">
                 DS, DR, and DV were separate engineering products built from a
                 substantially shared C++/FLTK codebase. I maintained and
                 extended shared functionality across configuration workflows,
@@ -339,7 +372,7 @@ export default function Experience() {
                     PowerPoint Report Generation
                   </h4>
 
-                  <p className="mt-2 max-w-5xl leading-7 text-slate-400">
+                  <p className="mt-2 leading-7 text-slate-400">
                     I developed functionality for automatically constructing
                     PowerPoint presentations from plot images produced by the
                     applications.
@@ -373,7 +406,7 @@ export default function Experience() {
                 DAQ Hardware & Software Integration
               </h3>
 
-              <p className="mt-3 max-w-5xl leading-7 text-slate-400">
+              <p className="mt-3 leading-7 text-slate-400">
                 I was the primary person responsible for integrating complete
                 DAQ systems with APEX software. This work crossed the boundary
                 between C++ application code, existing hardware plugins, vendor
@@ -417,7 +450,7 @@ export default function Experience() {
                 APEX License Manager
               </h3>
 
-              <p className="mt-3 max-w-5xl leading-7 text-slate-400">
+              <p className="mt-3 leading-7 text-slate-400">
                 I designed and implemented the architecture for a centralized
                 licensing system that replaced licensing logic distributed
                 across individual APEX applications. FlexNet itself and an
@@ -482,6 +515,17 @@ export default function Experience() {
                       configuration so changes could be loaded without
                       restarting the daemon.
                     </li>
+                    <li>
+                      Used AI-assisted code review to identify additional failure paths in the
+                      Python daemon, including malformed requests, socket-binding failures,
+                      heartbeat-monitor exceptions, and shutdown cleanup.
+                    </li>
+
+                    <li>
+                      Evaluated and incorporated thread-safety recommendations including
+                      threading.Event for shutdown signaling and threading.Lock around shared
+                      connection-list updates.
+                    </li>
                   </BulletList>
                 </div>
 
@@ -518,7 +562,7 @@ export default function Experience() {
                 APEX User Portal
               </h3>
 
-              <p className="mt-3 max-w-5xl leading-7 text-slate-400">
+              <p className="mt-3 leading-7 text-slate-400">
                 I inherited an existing Ruby on Rails 4.1 customer portal after
                 APEX stopped outsourcing its development. I had no previous
                 Rails experience when I volunteered to take over the
@@ -696,7 +740,7 @@ export default function Experience() {
                 Build, Release & Documentation Automation
               </h3>
 
-              <p className="mt-3 max-w-5xl leading-7 text-slate-400">
+              <p className="mt-3 leading-7 text-slate-400">
                 My APEX responsibilities also included maintaining and
                 improving systems used to build, package, sign, document, and
                 release software across Windows and Linux.
@@ -750,7 +794,7 @@ export default function Experience() {
                     DAQ+ Viewer
                   </h4>
 
-                  <p className="mt-2 max-w-5xl leading-7 text-slate-400">
+                  <p className="mt-2 leading-7 text-slate-400">
                     Built the initial DAQ+ Viewer application from scratch,
                     following styling established by the larger DAQ+ project.
                     The frontend was primarily QML/JavaScript, obtained data
@@ -764,7 +808,7 @@ export default function Experience() {
                     Internal License File Generator
                   </h4>
 
-                  <p className="mt-2 max-w-5xl leading-7 text-slate-400">
+                  <p className="mt-2 leading-7 text-slate-400">
                     Created a Python/PySide6 desktop application that replaced
                     manually constructing FlexNet license files in a text
                     editor. The application provided structured inputs,
@@ -778,7 +822,7 @@ export default function Experience() {
                     Dewesoft Binary Writer
                   </h4>
 
-                  <p className="mt-2 max-w-5xl leading-7 text-slate-400">
+                  <p className="mt-2 leading-7 text-slate-400">
                     Implemented a C++ Dewesoft binary-file writer using the
                     published format specification and example code, deriving
                     it from APEX&apos;s existing file-writer framework and
@@ -791,7 +835,7 @@ export default function Experience() {
                     QR Code Utility
                   </h4>
 
-                  <p className="mt-2 max-w-5xl leading-7 text-slate-400">
+                  <p className="mt-2 leading-7 text-slate-400">
                     Created a small internal Python/PySide6 GUI using the qrcode
                     module to generate QR codes for website and portal links
                     used in sales and conference material.
@@ -806,12 +850,59 @@ export default function Experience() {
                 Software Engineering Practices
               </h3>
 
-              <p className="mt-3 max-w-5xl leading-7 text-slate-400">
+              <p className="mt-3 leading-7 text-slate-400">
                 Across the APEX product line, I regularly worked with
                 object-oriented C++ designs, large existing codebases,
                 cross-platform development, difficult debugging problems, peer
                 review, customer support, and informal mentoring.
               </p>
+
+              <div className="mt-6 border-l border-slate-800 pl-6">
+                <h4 className="font-semibold text-slate-200">
+                  AI-Assisted Development
+                </h4>
+
+                <p className="mt-2 leading-7 text-slate-400">
+                  I incorporated GitHub Copilot into my development workflow for
+                  navigating large codebases, investigating defects, researching
+                  unfamiliar APIs, reviewing and refactoring code, reducing repetitive
+                  work, and exploring implementation approaches.
+                </p>
+
+                <BulletList>
+                  <li>
+                    Used AI-assisted repository search to locate relevant code in large,
+                    established applications, either beginning with suspected classes
+                    and files or searching across the codebase when the implementation
+                    location was unknown.
+                  </li>
+
+                  <li>
+                    Used AI to navigate large, unfamiliar areas of existing codebases, trace
+                    data and application behavior across related classes, and understand
+                    existing implementation patterns when developing new features.
+                  </li>
+
+                  <li>
+                    Rejected AI-generated approaches when they relied on incorrect assumptions,
+                    using the surrounding code and system behavior to guide further investigation.
+                  </li>
+                  
+                  <li>
+                    Used AI-assisted review for refactoring tasks such as breaking up
+                    large functions, extracting duplicated logic, reducing repeated code,
+                    and consolidating constants scattered across multiple files.
+                  </li>
+
+                  <li>
+                    Independently evaluated AI recommendations by examining surrounding
+                    code and execution paths, consulting documentation, compiling and
+                    running changes, reproducing problems, exercising affected
+                    functionality, and benchmarking performance-related changes when
+                    appropriate.
+                  </li>
+                </BulletList>
+              </div>              
 
               <BulletList>
                 <li>
@@ -893,13 +984,13 @@ export default function Experience() {
               </div>
 
               <p className="text-sm text-slate-400">
-                July 2009 – January 2015 · Huntsville, Alabama
+                July 2009 - January 2015 · Huntsville, Alabama
               </p>
             </div>
           </div>
 
           <div className="mt-6 space-y-10">
-            <p className="max-w-5xl leading-7 text-slate-400">
+            <p className="leading-7 text-slate-400">
               Before moving into full-time software engineering, I worked in
               engineering project execution and qualification testing. This
               role gave me experience with formal engineering requirements,
