@@ -1031,6 +1031,17 @@ export default function Experience() {
                 </li>
               </BulletList>
             </div>
+
+            <div className="flex flex-wrap gap-2">
+              <Badge>Test Engineering</Badge>
+              <Badge>IEEE 317</Badge>
+              <Badge>Qualification Testing</Badge>
+              <Badge>Test Procedures</Badge>
+              <Badge>Data Analysis</Badge>
+              <Badge>Engineering Documentation</Badge>
+              <Badge>Project Management</Badge>
+              <Badge>Manufacturing</Badge>
+            </div>
           </div>
         </section>
       </div>
