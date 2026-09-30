@@ -45,7 +45,7 @@ export default function Experience() {
               </div>
 
               <p className="text-sm text-slate-400">
-                March 2026 – Present · Tullahoma, Tennessee
+                March 2026 - Present · Tullahoma, Tennessee
               </p>
             </div>
           </div>
