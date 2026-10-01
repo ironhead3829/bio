@@ -1,14 +1,6 @@
-const Badge = ({ children }: { children: React.ReactNode }) => (
-  <span className="rounded-md bg-slate-800 px-3 py-1 text-sm text-slate-300">
-    {children}
-  </span>
-);
-
-const BulletList = ({ children }: { children: React.ReactNode }) => (
-  <ul className="mt-4 list-disc space-y-2 pl-5 text-slate-400">
-    {children}
-  </ul>
-);
+import Badge from "../components/Badge"
+import BadgeList from "../components/BadgeList";
+import BulletList from "../components/BulletList"
 
 export default function Experience() {
   return (
@@ -190,7 +182,7 @@ export default function Experience() {
               </BulletList>
             </div>
 
-            <div className="flex flex-wrap gap-2">
+            <BadgeList>
               <Badge>LabVIEW</Badge>
               <Badge>C#</Badge>
               <Badge>.NET</Badge>
@@ -198,7 +190,7 @@ export default function Experience() {
               <Badge>Redis</Badge>
               <Badge>T-SQL</Badge>
               <Badge>JKI State Machine</Badge>
-            </div>
+            </BadgeList>
           </div>
         </section>
 
@@ -936,7 +928,7 @@ export default function Experience() {
               </BulletList>
             </div>
 
-            <div className="flex flex-wrap gap-2">
+            <BadgeList>
               <Badge>C++</Badge>
               <Badge>Python</Badge>
               <Badge>Qt</Badge>
@@ -963,7 +955,7 @@ export default function Experience() {
               <Badge>REST APIs</Badge>
               <Badge>WebSockets</Badge>
               <Badge>CI/CD</Badge>
-            </div>
+            </BadgeList>
           </div>
         </section>
 
@@ -1032,7 +1024,7 @@ export default function Experience() {
               </BulletList>
             </div>
 
-            <div className="flex flex-wrap gap-2">
+            <BadgeList>
               <Badge>Test Engineering</Badge>
               <Badge>IEEE 317</Badge>
               <Badge>Qualification Testing</Badge>
@@ -1041,7 +1033,7 @@ export default function Experience() {
               <Badge>Engineering Documentation</Badge>
               <Badge>Project Management</Badge>
               <Badge>Manufacturing</Badge>
-            </div>
+            </BadgeList>
           </div>
         </section>
       </div>
