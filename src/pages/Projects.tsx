@@ -1,20 +1,6 @@
-const Badge = ({ children }: { children: React.ReactNode }) => (
-    <span className="rounded-full border border-slate-700 bg-slate-900 px-3 py-1 text-sm text-slate-300">
-        {children}
-    </span>
-);
-
-const BadgeList = ({ children }: { children: React.ReactNode }) => (
-    <div className="mt-5 flex flex-wrap gap-2">
-        {children}
-    </div>
-);
-
-const BulletList = ({ children }: { children: React.ReactNode }) => (
-    <ul className="mt-5 list-disc space-y-2 pl-5 leading-7 text-slate-400">
-        {children}
-    </ul>
-);
+import Badge from "../components/Badge";
+import BadgeList from "../components/BadgeList";
+import BulletList from "../components/BulletList";
 
 export default function Projects() {
     return (
