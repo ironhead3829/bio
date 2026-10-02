@@ -10,5 +10,5 @@ export default defineConfig({
     babel({ presets: [reactCompilerPreset()] }),
     tailwindcss(),
   ],
-  base: '/', // set the base URL for
+  base: '/bio/', // set the base URL for
 })
