@@ -106,11 +106,11 @@ export default function Contact() {
 
             <div>
               <div className="font-medium text-slate-200">
-                Résumé
+                Resume
               </div>
 
               <div className="mt-1 text-sm text-slate-400">
-                View my current résumé
+                View my current resume
               </div>
             </div>
           </a>
