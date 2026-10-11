@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import ScrollTop from './components/ScrollTop'
 
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -18,6 +19,7 @@ function App() {
         <Navbar />
 
         <main className="flex-1">
+          <ScrollTop /> {/* auto scroll top top when navigating */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

@@ -1,6 +1,19 @@
+import { FaGithub, FaLaptopCode, FaGraduationCap, FaMicrochip } from "react-icons/fa";
 import Badge from "../components/Badge";
 import BadgeList from "../components/BadgeList";
 import BulletList from "../components/BulletList";
+
+const projectHeaderClass =
+    "rounded-lg border border-slate-700/70 border-l-4 border-l-sky-400 " +
+    "bg-slate-900/70 px-5 py-4 sm:px-6";
+
+const projectClass = "space-y-0 border-b border-slate-800/80 pb-12 last:border-b-0 last:pb-0";
+
+const githubClass =
+    "mt-5 inline-flex items-center gap-2 rounded-lg border border-slate-700 " +
+    "px-4 py-2 text-sm font-medium text-sky-300 transition-colors " +
+    "hover:border-sky-500/60 hover:bg-slate-800 focus-visible:outline-none " +
+    "focus-visible:ring-2 focus-visible:ring-sky-400";
 
 export default function Projects() {
     return (
@@ -9,32 +22,47 @@ export default function Projects() {
                 Projects
             </h1>
 
-            <p className="mt-4 leading-7 text-slate-400">
+            <p className="mt-4 leading-8 text-slate-300">
                 A selection of personal and academic projects spanning web
                 development, desktop applications, hardware/software
                 integration, embedded systems, and local AI tooling.
             </p>
 
+            <nav aria-label="Project categories" className="mt-8 flex flex-wrap items-center gap-3">
+                <span className="mr-2 text-xs font-semibold uppercase tracking-widest text-slate-500">Jump to</span>
+                <a href="#personal-projects" className="inline-flex items-center gap-2 rounded-lg border border-slate-700 bg-slate-900/70 px-4 py-2 text-sm text-slate-200 transition-colors hover:border-sky-500/60 hover:text-sky-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400">
+                    <FaLaptopCode className="text-sky-400" aria-hidden="true" />
+                    Personal Projects
+                </a>
+                <a href="#academic-projects" className="inline-flex items-center gap-2 rounded-lg border border-slate-700 bg-slate-900/70 px-4 py-2 text-sm text-slate-200 transition-colors hover:border-sky-500/60 hover:text-sky-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400">
+                    <FaGraduationCap className="text-sky-400" aria-hidden="true" />
+                    Academic Projects
+                </a>
+            </nav>
+
             {/* Personal Projects */}
-            <div className="mt-12">
-                <h2 className="text-2xl font-semibold text-white">
+            <div id="personal-projects" className="mt-14 scroll-mt-24">
+                <h2 className="flex items-center gap-3 text-2xl font-semibold text-white">
+                    <FaLaptopCode className="text-sky-400" aria-hidden="true" />
                     Personal Projects
                 </h2>
 
                 <div className="mt-8 space-y-12">
                     {/* BankApp */}
-                    <article className="border-l border-slate-800 pl-6">
-                        <div className="flex flex-col gap-2 sm:flex-row sm:items-baseline sm:justify-between">
+                    <article className={projectClass}>
+                        <div className={projectHeaderClass}>
+                        <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                             <h3 className="text-xl font-semibold text-white">
                                 BankApp
                             </h3>
 
-                            <span className="text-sm text-slate-500">
+                            <span className="self-start rounded-md border border-slate-700 bg-slate-800/70 px-3 py-1 text-xs font-medium text-slate-300">
                                 Personal Project · In Redesign
                             </span>
                         </div>
+                        </div>
 
-                        <p className="mt-3 leading-7 text-slate-400">
+                        <p className="mt-5 leading-8 text-slate-300">
                             A personal finance application built around the
                             simplicity of a traditional checkbook register. I
                             started BankApp because existing financial
@@ -43,7 +71,7 @@ export default function Projects() {
                             particularly statement reconciliation.
                         </p>
 
-                        <p className="mt-4 leading-7 text-slate-400">
+                        <p className="mt-4 leading-8 text-slate-300">
                             The original application is a Ruby on Rails
                             application using server-rendered ERB views. It
                             supports multiple financial institutions and
@@ -79,7 +107,7 @@ export default function Projects() {
                             </li>
                         </BulletList>
 
-                        <p className="mt-5 leading-7 text-slate-400">
+                        <p className="mt-5 leading-8 text-slate-300">
                             I am currently redesigning the application around a
                             Rails API with a React/TypeScript frontend. The
                             planned architecture will make interactive
@@ -101,25 +129,28 @@ export default function Projects() {
                             href="https://github.com/ironhead3829/BankApp"
                             target="_blank"
                             rel="noreferrer"
-                            className="mt-5 inline-block text-sm font-medium text-sky-400 hover:text-sky-300"
+                            className={githubClass}
                         >
+                            <FaGithub aria-hidden="true" />
                             View on GitHub →
                         </a>
                     </article>
 
                     {/* Biography */}
-                    <article className="border-l border-slate-800 pl-6">
-                        <div className="flex flex-col gap-2 sm:flex-row sm:items-baseline sm:justify-between">
+                    <article className={projectClass}>
+                        <div className={projectHeaderClass}>
+                        <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                             <h3 className="text-xl font-semibold text-white">
                                 Professional Biography & Portfolio
                             </h3>
 
-                            <span className="text-sm text-slate-500">
+                            <span className="self-start rounded-md border border-slate-700 bg-slate-800/70 px-3 py-1 text-xs font-medium text-slate-300">
                                 Personal Project · Current
                             </span>
                         </div>
+                        </div>
 
-                        <p className="mt-3 leading-7 text-slate-400">
+                        <p className="mt-5 leading-8 text-slate-300">
                             This website serves both as a professional portfolio
                             and as my first practical React application. I began
                             the project after only limited introductory exposure
@@ -161,7 +192,7 @@ export default function Projects() {
                             </li>
                         </BulletList>
 
-                        <p className="mt-5 leading-7 text-slate-400">
+                        <p className="mt-5 leading-8 text-slate-300">
                             AI tools have been part of the development workflow
                             for design ideas, troubleshooting, code review, and
                             refinement. I write and evaluate the implementation
@@ -183,25 +214,28 @@ export default function Projects() {
                             href="https://github.com/ironhead3829/biography"
                             target="_blank"
                             rel="noreferrer"
-                            className="mt-5 inline-block text-sm font-medium text-sky-400 hover:text-sky-300"
+                            className={githubClass}
                         >
+                            <FaGithub aria-hidden="true" />
                             View on GitHub →
                         </a>
                     </article>
 
                     {/* Local AI */}
-                    <article className="border-l border-slate-800 pl-6">
-                        <div className="flex flex-col gap-2 sm:flex-row sm:items-baseline sm:justify-between">
+                    <article className={projectClass}>
+                        <div className={projectHeaderClass}>
+                        <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                             <h3 className="text-xl font-semibold text-white">
                                 Local AI Development Environment
                             </h3>
 
-                            <span className="text-sm text-slate-500">
+                            <span className="self-start rounded-md border border-slate-700 bg-slate-800/70 px-3 py-1 text-xs font-medium text-slate-300">
                                 Personal Experiment · Ongoing
                             </span>
                         </div>
+                        </div>
 
-                        <p className="mt-3 leading-7 text-slate-400">
+                        <p className="mt-5 leading-8 text-slate-300">
                             An ongoing experiment with locally hosted language
                             models for software development. The goal is to
                             learn more about local LLM tooling, explore a
@@ -258,31 +292,34 @@ export default function Projects() {
             </div>
 
             {/* Academic Projects */}
-            <div className="mt-16">
-                <h2 className="text-2xl font-semibold text-white">
+            <div id="academic-projects" className="mt-20 scroll-mt-24 border-t border-slate-800 pt-12">
+                <h2 className="flex items-center gap-3 text-2xl font-semibold text-white">
+                    <FaGraduationCap className="text-sky-400" aria-hidden="true" />
                     Academic Projects
                 </h2>
 
-                <p className="mt-3 leading-7 text-slate-400">
+                <p className="mt-5 leading-8 text-slate-300">
                     Selected projects from my Computer Engineering coursework
                     at the University of Alabama in Huntsville.
                 </p>
 
                 <div className="mt-8 space-y-12">
                     {/* UVDTS */}
-                    <article className="border-l border-slate-800 pl-6">
-                        <div className="flex flex-col gap-2 sm:flex-row sm:items-baseline sm:justify-between">
+                    <article className={projectClass}>
+                        <div className={projectHeaderClass}>
+                        <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                             <h3 className="text-xl font-semibold text-white">
                                 Universal Variable Differential Transformer
                                 Simulator
                             </h3>
 
-                            <span className="text-sm text-slate-500">
+                            <span className="self-start rounded-md border border-slate-700 bg-slate-800/70 px-3 py-1 text-xs font-medium text-slate-300">
                                 Senior Design Capstone · UAH · 2014
                             </span>
                         </div>
+                        </div>
 
-                        <p className="mt-3 leading-7 text-slate-400">
+                        <p className="mt-5 leading-8 text-slate-300">
                             A two-semester, three-person Computer Engineering
                             senior design project to develop a proof-of-concept
                             lower-cost method of simulating LVDT and RVDT
@@ -291,7 +328,7 @@ export default function Projects() {
                             Arduino Uno, and signal-processing firmware.
                         </p>
 
-                        <p className="mt-4 leading-7 text-slate-400">
+                        <p className="mt-4 leading-8 text-slate-300">
                             I was responsible for the hardware design and
                             implementation. My work covered the analog signal
                             path from the input conditioning circuitry through
@@ -332,12 +369,13 @@ export default function Projects() {
                             </li>
                         </BulletList>
 
-                        <div className="mt-6 rounded-lg border border-slate-800 bg-slate-900/40 p-5">
-                            <h4 className="font-semibold text-slate-200">
+                        <div className="mt-6 rounded-lg border border-sky-900/60 bg-slate-900/60 p-5 sm:p-6">
+                            <h4 className="flex items-center gap-2 font-semibold text-slate-100">
+                                <FaMicrochip className="text-sky-400" aria-hidden="true" />
                                 Alternative Architecture
                             </h4>
 
-                            <p className="mt-2 leading-7 text-slate-400">
+                            <p className="mt-3 leading-8 text-slate-300">
                                 After encountering throughput constraints in the
                                 implemented architecture, I proposed a
                                 conceptual alternative that preserved the AC
@@ -351,7 +389,7 @@ export default function Projects() {
                                 waveform.
                             </p>
 
-                            <p className="mt-3 leading-7 text-slate-400">
+                            <p className="mt-5 leading-8 text-slate-300">
                                 The concept was not prototyped or validated, but
                                 it represented a different approach to the
                                 performance problem: simplifying the
@@ -373,18 +411,20 @@ export default function Projects() {
                     </article>
 
                     {/* Catan */}
-                    <article className="border-l border-slate-800 pl-6">
-                        <div className="flex flex-col gap-2 sm:flex-row sm:items-baseline sm:justify-between">
+                    <article className={projectClass}>
+                        <div className={projectHeaderClass}>
+                        <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                             <h3 className="text-xl font-semibold text-white">
                                 Settlers of Catan Recreation
                             </h3>
 
-                            <span className="text-sm text-slate-500">
+                            <span className="self-start rounded-md border border-slate-700 bg-slate-800/70 px-3 py-1 text-xs font-medium text-slate-300">
                                 CPE 453: Senior Software Studio · UAH · 2012
                             </span>
                         </div>
+                        </div>
 
-                        <p className="mt-3 leading-7 text-slate-400">
+                        <p className="mt-5 leading-8 text-slate-300">
                             A team project to develop a playable C++/Qt
                             recreation of Settlers of Catan. My work focused on
                             backend game logic, persistence, localization, and
@@ -437,19 +477,21 @@ export default function Projects() {
                     </article>
 
                     {/* Game of Life */}
-                    <article className="border-l border-slate-800 pl-6">
-                        <div className="flex flex-col gap-2 sm:flex-row sm:items-baseline sm:justify-between">
+                    <article className={projectClass}>
+                        <div className={projectHeaderClass}>
+                        <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                             <h3 className="text-xl font-semibold text-white">
                                 Conway&apos;s Game of Life
                             </h3>
 
-                            <span className="text-sm text-slate-500">
+                            <span className="self-start rounded-md border border-slate-700 bg-slate-800/70 px-3 py-1 text-xs font-medium text-slate-300">
                                 CPE 353: Software Design & Engineering · UAH ·
                                 2011
                             </span>
                         </div>
+                        </div>
 
-                        <p className="mt-3 leading-7 text-slate-400">
+                        <p className="mt-5 leading-8 text-slate-300">
                             An individual C++/Qt implementation of Conway&apos;s
                             Game of Life built from functional requirements and
                             a user-interface mockup supplied by the course

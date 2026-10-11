@@ -1,4 +1,5 @@
-import Badge from "../components/Badge"
+import Badge from "../components/Badge";
+import { FaBriefcase, FaCode, FaFlask } from "react-icons/fa";
 import BadgeList from "../components/BadgeList";
 import BulletList from "../components/BulletList"
 
@@ -11,7 +12,7 @@ export default function Experience() {
           Experience
         </h1>
 
-        <p className="mt-4 leading-7 text-slate-400">
+        <p className="mt-4 leading-8 text-slate-300">
           My professional experience spans software development, engineering systems,
           hardware/software integration, build and release automation, and technical problem
           solving. Much of my work has involved maintaining and extending production systems while
@@ -19,31 +20,42 @@ export default function Experience() {
         </p>
       </header>
 
+      <nav aria-label="Jump to employer" className="mb-12 flex flex-wrap items-center gap-3">
+        <span className="mr-2 text-xs font-semibold uppercase tracking-widest text-slate-500">Jump to</span>
+        <a href="#amentum" className="rounded-lg border border-slate-700 bg-slate-900/70 px-4 py-2 text-sm text-slate-200 transition hover:border-sky-500/60 hover:bg-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400">Amentum</a>
+        <a href="#apex-turbine" className="rounded-lg border border-slate-700 bg-slate-900/70 px-4 py-2 text-sm text-slate-200 transition hover:border-sky-500/60 hover:bg-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400">APEX Turbine</a>
+        <a href="#qualtech" className="rounded-lg border border-slate-700 bg-slate-900/70 px-4 py-2 text-sm text-slate-200 transition hover:border-sky-500/60 hover:bg-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400">QualTech</a>
+      </nav>
+
       <div className="space-y-20">
         {/* =========================================================
             AMENTUM
         ========================================================= */}
-        <section>
-          <div className="border-b border-slate-800 pb-4">
+        <section id="amentum" className="scroll-mt-24">
+          <div className="rounded-xl border border-slate-700/70 border-l-4 border-l-sky-400 bg-slate-900/70 px-5 py-5 shadow-sm shadow-black/10 sm:px-6">
+            <div className="mb-3 flex items-center gap-2 text-sky-400">
+              <FaCode aria-hidden="true" />
+              <span className="text-xs font-semibold uppercase tracking-widest">Professional Experience</span>
+            </div>
             <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
               <div>
-                <h2 className="text-2xl font-semibold text-white">
+                <h2 className="text-2xl font-semibold tracking-tight text-white">
                   Amentum
                 </h2>
 
-                <p className="mt-1 text-slate-300">
+                <p className="mt-1 font-medium text-sky-300">
                   Software Engineer
                 </p>
               </div>
 
-              <p className="text-sm text-slate-400">
+              <p className="text-sm text-slate-300">
                 March 2026 - Present · Tullahoma, Tennessee
               </p>
             </div>
           </div>
 
           <div className="mt-6 space-y-10">
-            <p className="leading-7 text-slate-400">
+            <p className="leading-8 text-slate-300">
               I develop and maintain software used in engineering test and data
               systems, working primarily with LabVIEW and C#. My work includes
               implementing features, diagnosing defects, executing test plans,
@@ -55,11 +67,11 @@ export default function Experience() {
             </p>
 
             <div>
-              <h3 className="text-xl font-semibold text-white">
+              <h3 className="flex items-center gap-3 text-xl font-semibold text-white before:h-5 before:w-1 before:shrink-0 before:rounded-full before:bg-sky-400">
                 LabVIEW & DevExpress Grid Integration
               </h3>
 
-              <p className="mt-3 leading-7 text-slate-400">
+              <p className="mt-3 leading-8 text-slate-300">
                 A significant portion of my recent work has involved improving
                 the integration between LabVIEW applications and DevExpress
                 XtraGrid controls implemented through .NET.
@@ -101,11 +113,11 @@ export default function Experience() {
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold text-white">
+              <h3 className="flex items-center gap-3 text-xl font-semibold text-white before:h-5 before:w-1 before:shrink-0 before:rounded-full before:bg-sky-400">
                 Application Development & Maintenance
               </h3>
 
-              <p className="mt-3 leading-7 text-slate-400">
+              <p className="mt-3 leading-8 text-slate-300">
                 I work within an established suite of engineering applications,
                 implementing new behavior while preserving existing workflows.
               </p>
@@ -130,7 +142,7 @@ export default function Experience() {
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold text-white">
+              <h3 className="flex items-center gap-3 text-xl font-semibold text-white before:h-5 before:w-1 before:shrink-0 before:rounded-full before:bg-sky-400">
                 LabVIEW UI & Asynchronous Behavior
               </h3>
 
@@ -152,11 +164,11 @@ export default function Experience() {
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold text-white">
+              <h3 className="flex items-center gap-3 text-xl font-semibold text-white before:h-5 before:w-1 before:shrink-0 before:rounded-full before:bg-sky-400">
                 AI-Assisted Development
               </h3>
 
-              <p className="mt-3 leading-7 text-slate-400">
+              <p className="mt-3 leading-8 text-slate-300">
                 I use company-approved AI development tools, including GitHub Copilot
                 and OpenCode, as part of my C# and LabVIEW development workflow.
                 LabVIEW&apos;s binary source format limits direct code analysis, so I
@@ -197,30 +209,34 @@ export default function Experience() {
         {/* =========================================================
             APEX TURBINE
         ========================================================= */}
-        <section>
-          <div className="border-b border-slate-800 pb-4">
+        <section id="apex-turbine" className="scroll-mt-24">
+          <div className="rounded-xl border border-slate-700/70 border-l-4 border-l-sky-400 bg-slate-900/70 px-5 py-5 shadow-sm shadow-black/10 sm:px-6">
+            <div className="mb-3 flex items-center gap-2 text-sky-400">
+              <FaBriefcase aria-hidden="true" />
+              <span className="text-xs font-semibold uppercase tracking-widest">Professional Experience</span>
+            </div>
             <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
               <div>
-                <h2 className="text-2xl font-semibold text-white">
+                <h2 className="text-2xl font-semibold tracking-tight text-white">
                   APEX Turbine Testing Technologies
                     <span className="text-lg font-normal text-white inline-block ml-2">
                       (formerly Experimental Design and Analysis Solutions, Inc)
                     </span>
                 </h2>
 
-                <p className="mt-1 text-slate-300">
+                <p className="mt-1 font-medium text-sky-300">
                   Software Engineer
                 </p>
               </div>
 
-              <p className="text-sm text-slate-400">
+              <p className="text-sm text-slate-300">
                 January 2015 - January 2026
               </p>
             </div>
           </div>
 
           <div className="mt-6 space-y-14">
-            <p className="leading-7 text-slate-400">
+            <p className="leading-8 text-slate-300">
               During eleven years at APEX Turbine, I worked across much of the
               company&apos;s software product line rather than specializing in
               a single subsystem. My responsibilities included C++ desktop
@@ -232,23 +248,23 @@ export default function Experience() {
 
             {/* CO / SLU */}
             <div>
-              <h3 className="text-xl font-semibold text-white">
+              <h3 className="flex items-center gap-3 text-xl font-semibold text-white before:h-5 before:w-1 before:shrink-0 before:rounded-full before:bg-sky-400">
                 Circumferential Optimizer & Scope Limit Utility
               </h3>
 
-              <p className="mt-3 leading-7 text-slate-400">
+              <p className="mt-3 leading-8 text-slate-300">
                 Two of my first projects at APEX involved extracting existing
                 engineering functionality from larger applications and turning
                 it into focused standalone C++/Qt applications.
               </p>
 
-              <div className="mt-6 space-y-8 border-l border-slate-800 pl-6">
+              <div className="mt-6 space-y-8 border-l-2 border-sky-500/40 pl-5 sm:pl-6">
                 <div>
-                  <h4 className="font-semibold text-slate-200">
+                  <h4 className="font-semibold text-sky-100">
                     Circumferential Optimizer
                   </h4>
 
-                  <p className="mt-2 leading-7 text-slate-400">
+                  <p className="mt-2 leading-8 text-slate-300">
                     I began Circumferential Optimizer during my first week at
                     APEX and completed the initial standalone application in
                     approximately one month. The underlying probe-placement
@@ -277,11 +293,11 @@ export default function Experience() {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-slate-200">
+                  <h4 className="font-semibold text-sky-100">
                     Scope Limit Utility
                   </h4>
 
-                  <p className="mt-2 leading-7 text-slate-400">
+                  <p className="mt-2 leading-8 text-slate-300">
                     Immediately after Circumferential Optimizer, I created Scope
                     Limit Utility around limit-file functionality extracted from
                     an existing Workflow application.
@@ -307,11 +323,11 @@ export default function Experience() {
 
             {/* DS / DR / DV */}
             <div>
-              <h3 className="text-xl font-semibold text-white">
+              <h3 className="flex items-center gap-3 text-xl font-semibold text-white before:h-5 before:w-1 before:shrink-0 before:rounded-full before:bg-sky-400">
                 DS / DR / DV Product Family
               </h3>
 
-              <p className="mt-3 leading-7 text-slate-400">
+              <p className="mt-3 leading-8 text-slate-300">
                 DS, DR, and DV were separate engineering products built from a
                 substantially shared C++/FLTK codebase. I maintained and
                 extended shared functionality across configuration workflows,
@@ -319,9 +335,9 @@ export default function Experience() {
                 resolution.
               </p>
 
-              <div className="mt-6 space-y-8 border-l border-slate-800 pl-6">
+              <div className="mt-6 space-y-8 border-l-2 border-sky-500/40 pl-5 sm:pl-6">
                 <div>
-                  <h4 className="font-semibold text-slate-200">
+                  <h4 className="font-semibold text-sky-100">
                     Configuration Workflow
                   </h4>
 
@@ -343,7 +359,7 @@ export default function Experience() {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-slate-200">
+                  <h4 className="font-semibold text-sky-100">
                     Plot Visualization & Scope Limits
                   </h4>
 
@@ -360,11 +376,11 @@ export default function Experience() {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-slate-200">
+                  <h4 className="font-semibold text-sky-100">
                     PowerPoint Report Generation
                   </h4>
 
-                  <p className="mt-2 leading-7 text-slate-400">
+                  <p className="mt-2 leading-8 text-slate-300">
                     I developed functionality for automatically constructing
                     PowerPoint presentations from plot images produced by the
                     applications.
@@ -394,11 +410,11 @@ export default function Experience() {
 
             {/* DAQ */}
             <div>
-              <h3 className="text-xl font-semibold text-white">
+              <h3 className="flex items-center gap-3 text-xl font-semibold text-white before:h-5 before:w-1 before:shrink-0 before:rounded-full before:bg-sky-400">
                 DAQ Hardware & Software Integration
               </h3>
 
-              <p className="mt-3 leading-7 text-slate-400">
+              <p className="mt-3 leading-8 text-slate-300">
                 I was the primary person responsible for integrating complete
                 DAQ systems with APEX software. This work crossed the boundary
                 between C++ application code, existing hardware plugins, vendor
@@ -438,11 +454,11 @@ export default function Experience() {
 
             {/* License Manager */}
             <div>
-              <h3 className="text-xl font-semibold text-white">
+              <h3 className="flex items-center gap-3 text-xl font-semibold text-white before:h-5 before:w-1 before:shrink-0 before:rounded-full before:bg-sky-400">
                 APEX License Manager
               </h3>
 
-              <p className="mt-3 leading-7 text-slate-400">
+              <p className="mt-3 leading-8 text-slate-300">
                 I designed and implemented the architecture for a centralized
                 licensing system that replaced licensing logic distributed
                 across individual APEX applications. FlexNet itself and an
@@ -450,9 +466,9 @@ export default function Experience() {
                 designed and implemented the surrounding APEX system.
               </p>
 
-              <div className="mt-6 space-y-8 border-l border-slate-800 pl-6">
+              <div className="mt-6 space-y-8 border-l-2 border-sky-500/40 pl-5 sm:pl-6">
                 <div>
-                  <h4 className="font-semibold text-slate-200">
+                  <h4 className="font-semibold text-sky-100">
                     Architecture & Integration
                   </h4>
 
@@ -489,7 +505,7 @@ export default function Experience() {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-slate-200">
+                  <h4 className="font-semibold text-sky-100">
                     Monitoring & Recovery
                   </h4>
 
@@ -522,7 +538,7 @@ export default function Experience() {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-slate-200">
+                  <h4 className="font-semibold text-sky-100">
                     Legacy C++ Modernization
                   </h4>
 
@@ -550,11 +566,11 @@ export default function Experience() {
 
             {/* User Portal */}
             <div>
-              <h3 className="text-xl font-semibold text-white">
+              <h3 className="flex items-center gap-3 text-xl font-semibold text-white before:h-5 before:w-1 before:shrink-0 before:rounded-full before:bg-sky-400">
                 APEX User Portal
               </h3>
 
-              <p className="mt-3 leading-7 text-slate-400">
+              <p className="mt-3 leading-8 text-slate-300">
                 I inherited an existing Ruby on Rails 4.1 customer portal after
                 APEX stopped outsourcing its development. I had no previous
                 Rails experience when I volunteered to take over the
@@ -563,9 +579,9 @@ export default function Experience() {
                 and maintainer.
               </p>
 
-              <div className="mt-6 space-y-10 border-l border-slate-800 pl-6">
+              <div className="mt-6 space-y-10 border-l-2 border-sky-500/40 pl-5 sm:pl-6">
                 <div>
-                  <h4 className="font-semibold text-slate-200">
+                  <h4 className="font-semibold text-sky-100">
                     CRM
                   </h4>
 
@@ -586,7 +602,7 @@ export default function Experience() {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-slate-200">
+                  <h4 className="font-semibold text-sky-100">
                     Inventory & Quoting
                   </h4>
 
@@ -617,7 +633,7 @@ export default function Experience() {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-slate-200">
+                  <h4 className="font-semibold text-sky-100">
                     Timekeeping & PTO
                   </h4>
 
@@ -642,7 +658,7 @@ export default function Experience() {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-slate-200">
+                  <h4 className="font-semibold text-sky-100">
                     Licensing & OpenCode
                   </h4>
 
@@ -671,7 +687,7 @@ export default function Experience() {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-slate-200">
+                  <h4 className="font-semibold text-sky-100">
                     Support API Integration
                   </h4>
 
@@ -695,7 +711,7 @@ export default function Experience() {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-slate-200">
+                  <h4 className="font-semibold text-sky-100">
                     Portal Modernization & Database Work
                   </h4>
 
@@ -728,11 +744,11 @@ export default function Experience() {
 
             {/* Build / Release */}
             <div>
-              <h3 className="text-xl font-semibold text-white">
+              <h3 className="flex items-center gap-3 text-xl font-semibold text-white before:h-5 before:w-1 before:shrink-0 before:rounded-full before:bg-sky-400">
                 Build, Release & Documentation Automation
               </h3>
 
-              <p className="mt-3 leading-7 text-slate-400">
+              <p className="mt-3 leading-8 text-slate-300">
                 My APEX responsibilities also included maintaining and
                 improving systems used to build, package, sign, document, and
                 release software across Windows and Linux.
@@ -776,17 +792,17 @@ export default function Experience() {
 
             {/* Additional Engineering */}
             <div>
-              <h3 className="text-xl font-semibold text-white">
+              <h3 className="flex items-center gap-3 text-xl font-semibold text-white before:h-5 before:w-1 before:shrink-0 before:rounded-full before:bg-sky-400">
                 Additional Applications & Engineering Work
               </h3>
 
-              <div className="mt-6 space-y-8 border-l border-slate-800 pl-6">
+              <div className="mt-6 space-y-8 border-l-2 border-sky-500/40 pl-5 sm:pl-6">
                 <div>
-                  <h4 className="font-semibold text-slate-200">
+                  <h4 className="font-semibold text-sky-100">
                     DAQ+ Viewer
                   </h4>
 
-                  <p className="mt-2 leading-7 text-slate-400">
+                  <p className="mt-2 leading-8 text-slate-300">
                     Built the initial DAQ+ Viewer application from scratch,
                     following styling established by the larger DAQ+ project.
                     The frontend was primarily QML/JavaScript, obtained data
@@ -796,11 +812,11 @@ export default function Experience() {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-slate-200">
+                  <h4 className="font-semibold text-sky-100">
                     Internal License File Generator
                   </h4>
 
-                  <p className="mt-2 leading-7 text-slate-400">
+                  <p className="mt-2 leading-8 text-slate-300">
                     Created a Python/PySide6 desktop application that replaced
                     manually constructing FlexNet license files in a text
                     editor. The application provided structured inputs,
@@ -810,11 +826,11 @@ export default function Experience() {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-slate-200">
+                  <h4 className="font-semibold text-sky-100">
                     Dewesoft Binary Writer
                   </h4>
 
-                  <p className="mt-2 leading-7 text-slate-400">
+                  <p className="mt-2 leading-8 text-slate-300">
                     Implemented a C++ Dewesoft binary-file writer using the
                     published format specification and example code, deriving
                     it from APEX&apos;s existing file-writer framework and
@@ -823,11 +839,11 @@ export default function Experience() {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-slate-200">
+                  <h4 className="font-semibold text-sky-100">
                     QR Code Utility
                   </h4>
 
-                  <p className="mt-2 leading-7 text-slate-400">
+                  <p className="mt-2 leading-8 text-slate-300">
                     Created a small internal Python/PySide6 GUI using the qrcode
                     module to generate QR codes for website and portal links
                     used in sales and conference material.
@@ -838,23 +854,23 @@ export default function Experience() {
 
             {/* Engineering Practices */}
             <div>
-              <h3 className="text-xl font-semibold text-white">
+              <h3 className="flex items-center gap-3 text-xl font-semibold text-white before:h-5 before:w-1 before:shrink-0 before:rounded-full before:bg-sky-400">
                 Software Engineering Practices
               </h3>
 
-              <p className="mt-3 leading-7 text-slate-400">
+              <p className="mt-3 leading-8 text-slate-300">
                 Across the APEX product line, I regularly worked with
                 object-oriented C++ designs, large existing codebases,
                 cross-platform development, difficult debugging problems, peer
                 review, customer support, and informal mentoring.
               </p>
 
-              <div className="mt-6 border-l border-slate-800 pl-6">
-                <h4 className="font-semibold text-slate-200">
+              <div className="mt-6 border-l-2 border-sky-500/40 pl-5 sm:pl-6">
+                <h4 className="font-semibold text-sky-100">
                   AI-Assisted Development
                 </h4>
 
-                <p className="mt-2 leading-7 text-slate-400">
+                <p className="mt-2 leading-8 text-slate-300">
                   I incorporated GitHub Copilot into my development workflow for
                   navigating large codebases, investigating defects, researching
                   unfamiliar APIs, reviewing and refactoring code, reducing repetitive
@@ -962,27 +978,31 @@ export default function Experience() {
         {/* =========================================================
             QUALTECH / CURTISS-WRIGHT
         ========================================================= */}
-        <section>
-          <div className="border-b border-slate-800 pb-4">
+        <section id="qualtech" className="scroll-mt-24">
+          <div className="rounded-xl border border-slate-700/70 border-l-4 border-l-sky-400 bg-slate-900/70 px-5 py-5 shadow-sm shadow-black/10 sm:px-6">
+            <div className="mb-3 flex items-center gap-2 text-sky-400">
+              <FaFlask aria-hidden="true" />
+              <span className="text-xs font-semibold uppercase tracking-widest">Professional Experience</span>
+            </div>
             <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
               <div>
-                <h2 className="text-2xl font-semibold text-white">
+                <h2 className="text-2xl font-semibold tracking-tight text-white">
                   QualTech NP / Curtiss-Wright
                 </h2>
 
-                <p className="mt-1 text-slate-300">
+                <p className="mt-1 font-medium text-sky-300">
                   Associate Engineer / Project Lead
                 </p>
               </div>
 
-              <p className="text-sm text-slate-400">
+              <p className="text-sm text-slate-300">
                 July 2009 - January 2015 · Huntsville, Alabama
               </p>
             </div>
           </div>
 
           <div className="mt-6 space-y-10">
-            <p className="leading-7 text-slate-400">
+            <p className="leading-8 text-slate-300">
               Before moving into full-time software engineering, I worked in
               engineering project execution and qualification testing. This
               role gave me experience with formal engineering requirements,
@@ -991,7 +1011,7 @@ export default function Experience() {
             </p>
 
             <div>
-              <h3 className="text-xl font-semibold text-white">
+              <h3 className="flex items-center gap-3 text-xl font-semibold text-white before:h-5 before:w-1 before:shrink-0 before:rounded-full before:bg-sky-400">
                 Engineering Projects & Qualification Testing
               </h3>
 
