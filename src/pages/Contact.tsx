@@ -1,20 +1,29 @@
 import {
-  FaEnvelope,
-  FaGithub,
-  FaLinkedin,
-  FaFilePdf,
+    FaEnvelope,
+    FaLinkedin,
+    FaGithub,
+    FaFilePdf,
 } from "react-icons/fa";
+
+const iconClass = "h-7 w-7 shrink-0 transition-transform group-hover:scale-110";
+
+const linkClass =
+  "group flex items-center gap-4 rounded-lg border border-slate-800 " +
+  "bg-slate-900/50 px-4 py-3 transition-colors duration-200 " +
+  "hover:border-slate-600 hover:bg-slate-800/70 " +
+  "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400";
+
+const iconBoxClass =
+  "flex h-10 w-10 shrink-0 items-center justify-center rounded-lg " +
+  "bg-slate-800/80 text-xl transition-transform duration-200 " +
+  "group-hover:scale-110";
 
 export default function Contact() {
   return (
     <div className="mx-auto w-full max-w-7xl px-6 py-10">
-      {/* Page Header */}
       <header>
-        <h1 className="text-3xl font-semibold text-white">
-          Contact
-        </h1>
-
-        <p className="mt-4 max-w-3xl leading-7 text-slate-400">
+        <h1 className="text-3xl font-semibold text-white">Contact</h1>
+        <p className="mt-4 w-full leading-7 text-slate-400">
           Thanks for taking the time to learn more about my background and
           experience. If you would like to discuss a software engineering
           opportunity or have a question about my work, feel free to get in
@@ -22,97 +31,72 @@ export default function Contact() {
         </p>
       </header>
 
-      {/* Contact Links */}
-      <section className="mt-10 max-w-2xl">
-        <h2 className="text-xl font-semibold text-white">
+      <section className="mt-10 w-full" aria-labelledby="contact-links-heading">
+        <h2 id="contact-links-heading" className="text-xl font-semibold text-white">
           Get in Touch
         </h2>
-
-        <div className="mt-6 space-y-4">
-          {/* Email */}
-          <a
-            href="mailto:tunstij@gmail.com"
-            className="group flex items-center gap-4 rounded-lg border border-slate-800 bg-slate-900/50 p-4 transition hover:border-slate-700 hover:bg-slate-900"
-          >
-            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-slate-800 text-slate-300 transition group-hover:text-white">
-              <FaEnvelope />
-            </div>
-
-            <div>
-              <div className="font-medium text-slate-200">
-                Email
-              </div>
-
-              <div className="mt-1 text-sm text-slate-400">
+        <div className="mt-6 space-y-3">
+          <a href="mailto:tunstij@gmail.com" className={linkClass}>
+            <span className={iconBoxClass}>
+              <FaEnvelope className={`${iconClass} text-[#C9D1D9]`} />
+            </span>
+            <span className="min-w-0">
+              <span className="block font-medium text-slate-200">Email</span>
+              <span className="mt-0.5 block break-all text-sm text-slate-400">
                 tunstij@gmail.com
-              </div>
-            </div>
+              </span>
+            </span>
           </a>
 
-          {/* LinkedIn */}
           <a
             href="https://www.linkedin.com/in/jasontunstill"
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex items-center gap-4 rounded-lg border border-slate-800 bg-slate-900/50 p-4 transition hover:border-slate-700 hover:bg-slate-900"
+            className={linkClass}
           >
-            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-slate-800 text-blue-500 transition group-hover:text-blue-400">
-              <FaLinkedin />
-            </div>
-
-            <div>
-              <div className="font-medium text-slate-200">
-                LinkedIn
-              </div>
-
-              <div className="mt-1 text-sm text-slate-400">
+            <span className={iconBoxClass}>
+              <FaLinkedin className={`${iconClass} text-[#0A66C2]`} />
+            </span>
+            <span className="min-w-0">
+              <span className="block font-medium text-slate-200">LinkedIn</span>
+              <span className="mt-0.5 block break-all text-sm text-slate-400">
                 linkedin.com/in/jasontunstill
-              </div>
-            </div>
+              </span>
+            </span>
           </a>
 
-          {/* GitHub */}
           <a
             href="https://github.com/ironhead3829"
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex items-center gap-4 rounded-lg border border-slate-800 bg-slate-900/50 p-4 transition hover:border-slate-700 hover:bg-slate-900"
+            className={linkClass}
           >
-            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-slate-800 text-purple-400 transition group-hover:text-purple-300">
-              <FaGithub />
-            </div>
-
-            <div>
-              <div className="font-medium text-slate-200">
-                GitHub
-              </div>
-
-              <div className="mt-1 text-sm text-slate-400">
+            <span className={iconBoxClass}>
+              <FaGithub className={`${iconClass} text-[#C9D1D9]`} />
+            </span>
+            <span className="min-w-0">
+              <span className="block font-medium text-slate-200">GitHub</span>
+              <span className="mt-0.5 block break-all text-sm text-slate-400">
                 github.com/ironhead3829
-              </div>
-            </div>
+              </span>
+            </span>
           </a>
 
-          {/* Resume */}
           <a
             href={`${import.meta.env.BASE_URL}Jason_Tunstill_Resume.pdf`}
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex items-center gap-4 rounded-lg border border-slate-800 bg-slate-900/50 p-4 transition hover:border-slate-700 hover:bg-slate-900"
+            className={linkClass}
           >
-            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-slate-800 text-red-400 transition group-hover:text-red-300">
-              <FaFilePdf />
-            </div>
-
-            <div>
-              <div className="font-medium text-slate-200">
-                Resume
-              </div>
-
-              <div className="mt-1 text-sm text-slate-400">
+            <span className={iconBoxClass}>
+              <FaFilePdf className={`${iconClass} text-[#F87171]`} />
+            </span>
+            <span className="min-w-0">
+              <span className="block font-medium text-slate-200">Resume</span>
+              <span className="mt-0.5 block text-sm text-slate-400">
                 View my current resume
-              </div>
-            </div>
+              </span>
+            </span>
           </a>
         </div>
       </section>

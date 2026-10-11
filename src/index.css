@@ -7,3 +7,13 @@ body,
   min-height: 100%;
   margin: 0;
 }
+
+/* Shared presentation refinements. No biography content is changed. */
+html { scroll-behavior: smooth; }
+body { -webkit-font-smoothing: antialiased; }
+::selection { background: rgba(56, 189, 248, .3); color: #fff; }
+:focus-visible { outline-color: #38bdf8; outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
