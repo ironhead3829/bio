@@ -2,8 +2,6 @@ import Hero from "../components/Hero";
 import { Link } from "react-router-dom";
 import { FaArrowRight, FaCode, FaLayerGroup, FaWrench } from "react-icons/fa";
 
-
-
 export default function Home() {
     const resumeUrl = `${import.meta.env.BASE_URL}Jason_Tunstill_Resume.pdf`;
     return (
